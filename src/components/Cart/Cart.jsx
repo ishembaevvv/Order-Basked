@@ -16,9 +16,16 @@ export default function Cart() {
 
   if (isEmpty)
     return (
-      <h1 className="text-green-600 text-9xl flex justify-center items-center h-screen">
+  <div>
+    <h1 className="text-green-600 text-9xl flex justify-center items-center h-screen">
         Карзина пуста!
       </h1>
+     <div className="position-absolute left-10 bottom-10 border-3 rounded-lg 
+      transition-all text-white bg-green-500 bg-opacity-70 hover:bg-opacity-100 
+      h-11 w-20 flex items-center justify-center py-1">
+        <Link to="/">Назад</Link>
+      </div>
+  </div>
     );
 
   return (
